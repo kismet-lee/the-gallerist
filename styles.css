@@ -182,6 +182,24 @@ a .ghost-button:hover{
     border: 2px solid #183028;
 }
 
+.contact-container {
+    width: 100%;
+    background-color: #d5bf29;
+}
+
+.contact-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    width: 1250px;
+    background-color: #183028;
+    margin: 0 auto;
+}
+
+.contact-col-2 {
+    width: 50%;
+}
+
 footer {
     padding: 2%;
     background-color: #000000;
