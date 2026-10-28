@@ -12,23 +12,23 @@
 <body>
     <nav>
         <div class="nav-wrapper"> 
-          <ul class="sidebar">
+          <ul class="sidebar" id="sidebar-menu">
             <li onclick=hideSidebar()>
                 <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                 </a>
             </li>
-            <li><a href="#top">Top</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#access">Access</a></li>
-            <li><a href="#contact">Contact Us</a></li> 
+            <li class="nav-link"><a href="#top">Top</a></li>
+            <li class="nav-link"><a href="#about">About</a></li>
+            <li class="nav-link"><a href="#menu">Menu</a></li>
+            <li class="nav-link"><a href="#access">Access</a></li>
+            <li class="nav-link"><a href="#contact">Contact Us</a></li> 
          </ul>   
          <ul>
             <li>
                 <a href="#" alt="The Gallerist Logo - Top">
                     <div class="logo">
-                        <img src="images/The Gallerist - Logo - Block - White.svg" class="nav-logo" alt="The Gallerist Logo">
+                        <img src="images/The Gallerist - Logo - Block - Gold.svg" class="nav-logo" alt="The Gallerist Logo">
                     </div>
                 </a>
             </li>
@@ -50,16 +50,16 @@
 
     <header id="top">
         <div class="header-container">    
-            <img class="header-logo" src="images/The Gallerist - Logo - White.svg" alt="The Gallerist Logo">
+            <img class="header-logo" src="images/The Gallerist - Logo - Gold.svg" alt="The Gallerist Logo">
             <p>Immerse yourself in curated contemporary art, music, and cocktails at The Gallerist.</p>
                       
             <div class="button-wrap">
-                <a href="#">
+                <a href="https://maps.app.goo.gl/6X9hFnpriTAmW4Ky7">
                     <div class="button">
                    RSVP NOW
                     </div>
                 </a>
-                <a href="#access">
+                <a href="https://maps.app.goo.gl/6X9hFnpriTAmW4Ky7">
                     <div class="ghost-button">
                         ACCESS
                     </div>
@@ -68,6 +68,9 @@
             </div>
         </div>
     </header>
+
+    <!--About Section-->
+
     <div class="about-container" id="about">
         <div>
             <img src="images/about.jpg" alt="About The Gallerist">
@@ -86,29 +89,32 @@
            <img src="images/space4.jpg" alt="The Gallerist Space 4">
         </div>
     </div>
+
+    <!--Menu Section-->
+
     <div class="menu-container" id="menu">
         <h2>THE MENU</h2>
-            <div class="menu-wrap">
-                <div class="menu-col-1">
+            <div class="menu-wrapper">
+                <div class="menu-col">
                     <div class="menu-items-wrap">
                         <div class="menu-item">
                             <h3>Drink</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                         </div>
                         <div class="menu-item">
                             <h3>Drink</h3>
-                            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                         </div>
                         <div class="menu-item">
                             <h3>Drink</h3>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="menu-item-img">
                         <img src="images/menu.jpg" alt="The Gallerist Menu">
                     </div>
                 </div>
-                <div class="menu-col-2">
+                <div class="menu-col">
                     <div class="menu-items-wrap">
                         <div class="menu-item">
                             <h3>Drink</h3>
@@ -122,29 +128,38 @@
                             <h3>Drink</h3>
                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                         </div>
+                    </div>
+                    <div class="menu-item-img">
+                        <img src="images/menu.jpg" alt="The Gallerist Menu">
                     </div>
                 </div>
             </div>
-            <div>
-                        <img src="images/menu.jpg" alt="The Gallerist Menu">
-                    </div>
+                    
                     <div class="button">
-                        <a href="#">
-                            <button>RSVP NOW</button>
+                        <a href="https://maps.app.goo.gl/6X9hFnpriTAmW4Ky7">
+                            <div class="button">RSVP NOW</div>
                         </a>
                     </div>
     </div>
+
+    <!--Access Section-->
+
     <div class="access-container" id="access">
-        <div>
-            <h2>THE LOCATION</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="access-wrapper">
+            <div>
+                <h2>THE LOCATION</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="button">
+                            <a href="https://maps.app.goo.gl/6X9hFnpriTAmW4Ky7">
+                                <div class="button">ACCESS</div>
+                            </a>
+            </div>
         </div>
-          <div class="button">
-                        <a href="#">
-                            <button>ACCESS</button>
-                        </a>
-                    </div>
     </div>
+
+    <!--Contact Section-->
+
     <div class="contact-container">
         <div class="contact-wrapper">
                 <div class="contact-col-1">
@@ -154,16 +169,16 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
                 <div class="icon-wrap">
-                    <a href="#"><img src="images/facebook.png" alt="Facebook Icon"></a>
-                    <a href="#"><img src="images/instagram.png" alt="Instagram Icon"></a>
-                    <a href="#"><img src="images/twitter.png" alt="Twitter Icon"></a>
+                    <a href="https://maps.app.goo.gl/6X9hFnpriTAmW4Ky7"><img src="images/google.svg" alt="The Gallerist Google" class="icon"></a>
+                    <a href="https://www.instagram.com/thegalleristosaka/"><img src="images/instagram.svg" alt="The Gallerist Instagram" class="icon"></a>
+                    <a href="#"><img src="images/mail.svg" alt="E-Mail The Gallerist" class="icon"></a>
                 </div>
             </div>
             <div class="contact-col-2">
                 <p>EXPERIENCE THE</p>
                 <p>GALLERIST</p>
                 <a href="#">
-                    <button>RSVP NOW</button>
+                    <div class="button">RSVP NOW</div>
                 </a>
             </div>
         </div>  
@@ -171,10 +186,10 @@
     <footer>
         <div class="footer-container">
             <div>
-                <p>&copy; 2024 The Gallerist. All rights reserved.</p>
+                <p>&copy;2026 The Gallerist. All rights reserved.</p>
             </div>
              <div>
-                <p>Designed and developed by <a href="#">Traci</a></p>
+                <p>Designed and developed by <a href="https://www.linkedin.com/in/destiny-simmons-2b010571/">Traci</a></p>
             </div>        
     </footer>
     <script>
