@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="nav-wrapper"> 
+    <nav id="top">
+        <div class="nav-container"> 
           <ul class="sidebar" id="sidebar-menu">
             <li onclick=hideSidebar()>
                 <a href="#">
@@ -26,9 +26,9 @@
          </ul>   
          <ul>
             <li>
-                <a href="#" alt="The Gallerist Logo - Top">
+                <a href="#top" alt="The Gallerist Logo - Top">
                     <div class="logo">
-                        <img src="images/The Gallerist - Logo - Block - Gold.svg" class="nav-logo" alt="The Gallerist Logo">
+                        <img src="images/GT - Logo - Gold.svg" class="nav-logo" alt="The Gallerist Logo">
                     </div>
                 </a>
             </li>
@@ -48,9 +48,9 @@
 
     <!-- Header Section -->
 
-    <header id="top">
-        <div class="header-container">    
-            <img class="header-logo" src="images/The Gallerist - Logo - Gold.svg" alt="The Gallerist Logo">
+    <header>
+        <div class="header-section">    
+            <img class="header-logo" src="images/The Gallerist Logo Gold.svg" alt="The Gallerist Logo">
             <p>Immerse yourself in curated contemporary art, music, and cocktails at The Gallerist.</p>
                       
             <div class="button-wrap">
@@ -71,30 +71,67 @@
 
     <!--About Section-->
 
-    <div class="about-container" id="about">
-        <div>
-            <img src="images/about.jpg" alt="About The Gallerist">
+    <section class="about-section" id="about">
+        <h2>MORE THAN A BAR</h2>
+        <div class="img-wrap">
+            <div class="img">
+                <img src="images/music-1.jpg" alt="The Gallerist has curated music." />
+            </div>
+            <div class="img" alt="The Gallerist has curated art.">
+                <img src="images/gallery-2.jpg" alt="The Gallerist has curated art." />
+            </div>
+            <div class="img">
+                <img src="images/cocktail-2.jpg" alt="The Gallerist has curated cocktails."/>
+            </div>
         </div>
-        <div>
-            <h2>THE STORY</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-    </div>
-    <div class="space-container" id="space">
+    </section>
+
+    <!--Space Section-->
+
+    <section class="space-section" id="space">
+        <div class="space-container">
         <h2>THE SPACE</h2>
         <div class="img-wrap">
-           <img src="images/space1.jpg" alt="The Gallerist Space 1">
-           <img src="images/space2.jpg" alt="The Gallerist Space 2">
-           <img src="images/space3.jpg" alt="The Gallerist Space 3">
-           <img src="images/space4.jpg" alt="The Gallerist Space 4">
+                <div class="img" alt="The Gallerist image">
+                    <img src="images/space-1.jpg" alt="The Gallerist's interior image 1.">
+                </div>
+                <div class="img" alt="The Gallerist image">
+                    <img src="images/space-2.jpg" alt="The Gallerist's interior image 2.">
+                </div>
+
+                <div class="img" alt="The Gallerist image">
+                    <img src="images/space-3.jpg" alt="The Gallerist's interior image 3.">
+                </div>
+                <div class="img" alt="The Gallerist image">
+                    <img src="images/space-4.jpg" alt="The Gallerist's interior image 4.">
+                </div>
         </div>
-    </div>
+        <div class="img-wrap-tablet">
+            <div class="row-1">
+                <div class="img" alt="The Gallerist image">
+                    <img src="images/space-1.jpg" alt="The Gallerist's interior image 1.">
+                </div>
+                <div class="img" alt="The Gallerist image">
+                    <img src="images/space-2.jpg" alt="The Gallerist's interior image 2.">
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="img" alt="The Gallerist image">
+                    <img src="images/space-3.jpg" alt="The Gallerist's interior image 3.">
+                </div>
+                <div class="img" alt="The Gallerist image">
+                    <img src="images/space-4.jpg" alt="The Gallerist's interior image 4.">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
 
     <!--Menu Section-->
 
-    <div class="menu-container" id="menu">
+    <section class="menu-section" id="menu">
         <h2>THE MENU</h2>
-            <div class="menu-wrapper">
+            <div class="menu-container">
                 <div class="menu-col">
                     <div class="menu-items-wrap">
                         <div class="menu-item">
@@ -111,7 +148,6 @@
                         </div>
                     </div>
                     <div class="menu-item-img">
-                        <img src="images/menu.jpg" alt="The Gallerist Menu">
                     </div>
                 </div>
                 <div class="menu-col">
@@ -130,7 +166,6 @@
                         </div>
                     </div>
                     <div class="menu-item-img">
-                        <img src="images/menu.jpg" alt="The Gallerist Menu">
                     </div>
                 </div>
             </div>
@@ -140,15 +175,15 @@
                             <div class="button">RSVP NOW</div>
                         </a>
                     </div>
-    </div>
+                </section>
 
     <!--Access Section-->
 
-    <div class="access-container" id="access">
-        <div class="access-wrapper">
-            <div>
+    <section class="access-section" id="access">
+        <div class="access-container">
+            <div class="access-text">
                 <h2>THE LOCATION</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Join us at The Gallerist to enjoy curated art, drinks, and cocktails. Let’s celebrate the grand opening!</p>
             </div>
             <div class="button">
                             <a href="https://maps.app.goo.gl/6X9hFnpriTAmW4Ky7">
@@ -156,12 +191,12 @@
                             </a>
             </div>
         </div>
-    </div>
+    </section>
 
     <!--Contact Section-->
-
-    <div class="contact-container">
-        <div class="contact-wrapper">
+    <section class="contact-section">
+    
+        <div class="contact-container">
                 <div class="contact-col-1">
                 <h2>
                     GET IN TOUCH
@@ -182,9 +217,12 @@
                 </a>
             </div>
         </div>  
-    </div>
+    </section>
+
+    <!--Footer Section-->
+
     <footer>
-        <div class="footer-container">
+        <div class="footer-wrapper">
             <div>
                 <p>&copy;2026 The Gallerist. All rights reserved.</p>
             </div>
@@ -192,6 +230,9 @@
                 <p>Designed and developed by <a href="https://www.linkedin.com/in/destiny-simmons-2b010571/">Traci</a></p>
             </div>        
     </footer>
+
+    <!--Script-->
+
     <script>
         function showSidebar() {
             const sidebar = document.querySelector('.sidebar');
@@ -202,6 +243,11 @@
             const sidebar = document.querySelector('.sidebar');
             sidebar.style.display = 'none';
         }
+
+        document.querySelectorAll('.nav-link a').forEach((link) => {
+        link.addEventListener('click', hideSidebar);
+        }
+    );
     </script>
 </body>
 </html>
