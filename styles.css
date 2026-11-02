@@ -484,6 +484,7 @@ a .ghost-button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .contact-col-1 {
@@ -613,10 +614,6 @@ footer {
  .img-wrap {
     flex-direction: column;
 }
-
- .contact-wrap p {
-    text-align: center;
-  }
 
  .img-wrap .img {
     max-width: 600px;
