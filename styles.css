@@ -630,6 +630,11 @@ footer {
     width: 80%;
 }
 
+ .img-logo {
+    margin-top: 8%;
+    width: 80%;
+  }
+
  .access-section {
     height: 600px;
   }
@@ -674,11 +679,11 @@ footer {
   }
 
   .button {
-    margin: 16px 0;
+    margin: 8px 0;
   }
 
   .ghost-button {
-    margin: 16px 0;
+    margin: 8px 0;
   }
 
   .img-wrap {
@@ -690,10 +695,6 @@ footer {
   .img-wrap .img-2 {
     right: 0;
   } 
-
-  .img-logo {
-    width: 80%;
-  }
 
   .about-container {
     width: 100%;
@@ -708,6 +709,10 @@ footer {
     height: 400px;
   }
 
+  .access-container h2 {
+    font-size: 1rem;
+  }
+
   .space-section {
     width: 100%;
   }
@@ -718,13 +723,18 @@ footer {
   }
 
   .footer-section {
-    font-size: 0.75rem;
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
   }
 
-  .footer-section p {
-    margin-bottom: 2%;
+  .footer-wrapper {
+    padding: 32px 0px;
+
+  }
+
+  .footer-wrapper p {
+    font-size: 1rem;
   }
 }
