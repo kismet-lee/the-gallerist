@@ -51,7 +51,7 @@
     <header>
         <div class="header-section">    
             <img class="header-logo" src="images/The Gallerist Logo Gold.svg" alt="The Gallerist Logo">
-            <p>Immerse yourself in curated contemporary art, music, and cocktails at The Gallerist.</p>
+            <p>Craft cocktails, avant-garde contemporary art, and a curated sonic landscape converge at The Gallerist.</p>
                       
             <div class="button-wrap">
                 <a href="https://maps.app.goo.gl/6X9hFnpriTAmW4Ky7">
@@ -69,19 +69,28 @@
         </div>
     </header>
 
+
+    <!--Back top top button -->
+
+
+
     <!--About Section-->
 
     <section class="about-section" id="about">
         <div class="about-container">
+            <p class="about-text">An immersive lounge driven by <span>Taisho-era Art Deco</span>, elegance and <span>cross-cultural</span> vanguard.</p>
             <div class="img-wrap">
                 <div class="img">
                     <img src="images/music-1.jpg" alt="The Gallerist has curated music." />
+                    <p>Curated Music</p>
                 </div>
-                <div class="img-2" alt="The Gallerist has curated art.">
+                  <div class="img-2">
+                    <img src="images/cocktail-2.jpg" alt="The Gallerist has craft cocktails."/>
+                    <p>Craft Cocktails</p>
+                </div>
+                <div class="img" alt="The Gallerist has curated art.">
                     <img src="images/gallery-2.jpg" alt="The Gallerist has curated art." />
-                </div>
-                <div class="img">
-                    <img src="images/cocktail-2.jpg" alt="The Gallerist has curated cocktails."/>
+                    <p>Curated Art</p>
                 </div>
             </div>
         </div>
@@ -116,7 +125,7 @@
 
     <section class="menu-section" id="menu">
             <div class="menu-container">
-                <h2>THE MENU</h2>
+                <h2>CRAFT COCKTAILS</h2>
                 <div class="menu-wrap">
                     <div class="menu-col-1">
                     <div class="menu-items-wrap">
@@ -173,7 +182,7 @@
                 <div class="access-text">
                     <h2>BEAUTY IS INTENTIONALLY</h2>
                     <img src="images/TG - Impractical - Graphic.svg" alt="The Gallerist motto, beauty is intentionally impractical"/>
-                    <a href="#">
+                    <a href="https://www.instagram.com/thegalleristosaka/">
                         <div class="button">RSVP NOW</div>
                     </a>
                 </div>
@@ -187,11 +196,8 @@
         <div class="contact-container">
                 <div class="contact-col-1">
                     <div class="contact-wrap">
-                        <h2>
-                        GET IN TOUCH
-                        </h2>
-                        <p>Find us on Google or Instagram by clicking one of the links below. You can also send us a direct e-mail.
-                        </p>
+                        <h2>RSVP NOW</h2>
+                        <p>Experience The Gallerist, our hidden speakeasy lounge. Make a reservation by messaging us on Instagram or sending an email.</p>
                         <div class="icon-wrap">
                         <a href="https://maps.app.goo.gl/6X9hFnpriTAmW4Ky7"><img src="images/google.svg" alt="The Gallerist Google" class="icon"></a>
                         <a href="https://www.instagram.com/thegalleristosaka/"><img src="images/instagram.svg" alt="The Gallerist Instagram" class="icon"></a>
@@ -201,8 +207,8 @@
                 </div>
            <div class="contact-col-2">
                 <div class="contact-wrap">
-                    <h2>THE LOCATION</h2>
-                <p>Join us at The Gallerist to enjoy curated art, drinks, and cocktails. Let’s celebrate the grand opening!</p>
+                    <h2>LOCATION & HOURS</h2>
+                <p>We're open 15:00-00:00, Wednesday to Sunday. We're closed on Monday and Tuesday.</p>
                 <a href="https://maps.app.goo.gl/6X9hFnpriTAmW4Ky7">
                                 <div class="button">ACCESS</div>
                 </a>
@@ -217,7 +223,7 @@
     <footer>
         <div class="footer-wrapper">
             <div>
-                <p>&copy;2026 The Gallerist. All rights reserved.</p>
+                <p>&copy;2026 <a href="#Top">The Gallerist</a>. All rights reserved.</p>
             </div>
              <div>
                 <p>Designed and developed by <a href="https://www.linkedin.com/in/destiny-simmons-2b010571/">Traci</a></p>
@@ -241,6 +247,14 @@
         link.addEventListener('click', hideSidebar);
         }
     );
+
+        const btn = document.getElementById('scrollBtn');
+        window.onScroll = () => {
+            btn.style.display = window.scrollY > 200 ? 'block' : 'none';
+        };
+        function scrollToTop(){
+            winow.scrollTo({ top: 0, behavior: 'smooth'});
+        }
     </script>
 </body>
 </html>

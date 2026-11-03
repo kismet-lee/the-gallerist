@@ -25,6 +25,7 @@ html {
   height: 100%;
   width: 100%;
   margin: 0 auto;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -142,11 +143,13 @@ header {
 }
 
 .header-section p {
-  font-size: 24px;
+  font-size: 1.5rem;
   text-align: center;
   width: 100%;
   max-width: 580px;
 }
+
+/*buttons*/
 
 .button-wrap {
   display: flex;
@@ -219,7 +222,7 @@ a .ghost-button:hover {
 .about-section {
   height: 100%;
   width: 100%;
-  padding-top: 10%;
+  padding-top: 7%;
   padding-bottom: 14%;
   display: flex;
   flex-direction: column;
@@ -244,6 +247,72 @@ a .ghost-button:hover {
   justify-content: center;
   width: 80%;
 }
+
+.img {
+      position: relative;
+}
+
+.img p {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+
+}
+
+.img-2 {
+      position: relative;
+}
+
+.img-2 p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.img:hover p {
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0);
+    color:rgba(0, 0, 0, 0);
+    transition: 0.2s ease-in;
+}
+
+.img-2:hover p {
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0);
+    color:rgba(0, 0, 0, 0);
+    transition: 0.2s ease-in;
+}
+
+  span {
+    color: #bd9741;
+  }
+
+  .about-text {
+    width: 40%;
+    text-align: center;
+    font-size: 2.35rem;
+    margin-bottom: 32px;
+  }
+
+  .about-text span {
+    font-size: 2.35rem;
+  }
 
 /* space section*/
 
@@ -283,7 +352,7 @@ a .ghost-button:hover {
 
 .img {
   height: 380px;
-  max-width: 360px;
+  max-width: 380px;
   width: 100%;
   background-color: #000000;
   border-radius: 4px;
@@ -534,6 +603,10 @@ footer {
   padding: 2% 0;
 }
 
+footer a {
+    font-size: 1rem;
+}
+
 .footer-wrapper {
   display: flex;
   align-items: center;
@@ -570,8 +643,21 @@ footer {
     display: none;
   }
 
+  .header-section p {
+    font-size: 1.2rem;
+  }
+
   .about-section {
     padding: 10% 0;
+  }
+
+  .about-text {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .about-text span {
+    font-size: 2rem;
   }
 
   .space-section {
@@ -622,21 +708,21 @@ footer {
 
  .img-wrap {
     flex-direction: column;
+    max-width: 600px;
+    width:80%;
 }
 
  .img-wrap .img {
-    max-width: 600px;
-    width: 80%;
+    width: 100%;
+    height: 100%;
 }
-
 
  .img-wrap .img-2 {
     top: 0;
     right: 40px;
     margin-bottom: 4%;
-    height: 300px;
-    max-width: 600px;
-    width: 80%;
+    height: 100%;
+    max-width: 100%;
 }
 
  .img-logo {
@@ -671,6 +757,10 @@ footer {
     font-size: 1rem;
   }
 
+  .header-logo {
+    margin-bottom: 24px;
+  }
+
   .sidebar {
     width: 100vw;
   }
@@ -689,7 +779,7 @@ footer {
   }
 
   .button {
-    margin: 8px 0;
+    margin: 16px 0;
   }
 
   .ghost-button {
