@@ -304,7 +304,8 @@ a .ghost-button:hover {
   }
 
   .about-text {
-    width: 80%;
+    width: 70%;
+    max-width: 1250px;
     text-align: center;
     font-size: 2.35rem;
     margin-bottom: 32px;
@@ -454,6 +455,8 @@ a .ghost-button:hover {
   margin-bottom: 16px;
 }
 
+/*access section*/
+
 .access-section {
   margin: 0 auto;
   width: 100%;
@@ -482,6 +485,7 @@ a .ghost-button:hover {
 
 .access-border {
     width: 80%;
+    max-width: 1250px;
     height: 80%;
     border: solid 1px #bd9741;
     border-radius: 8px;
@@ -500,10 +504,11 @@ a .ghost-button:hover {
   align-items: center;
 }
 
-.access-container h2 {
+.access-container p {
     font-weight: 100;
     font-size: 1.2rem;
     font-style: italic;
+    margin-bottom: 2%;
 }
 
 .access-container img {
@@ -513,6 +518,8 @@ a .ghost-button:hover {
 .access-text .button {
     margin-top: 32px;
 }
+
+/*contact section*/
 
 .contact-section {
   width: 100%;
@@ -552,6 +559,7 @@ a .ghost-button:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  border-radius: 8px;
 }
 
 .contact-col-1 {
@@ -597,13 +605,15 @@ a .ghost-button:hover {
     margin-bottom: 32px;
 }
 
+/*footer section*/
+
 footer {
   background-color: #08120f;
   padding: 2% 0;
 }
 
 footer a {
-    font-size: 1rem;
+    color: #bd9741;
 }
 
 .footer-wrapper {
@@ -633,7 +643,7 @@ footer a {
 
 /*responsiveness for images*/
 
-   .img {
+    .img {
     margin: 4% 0;
     height: 300px;
     max-width: 600px;
@@ -647,7 +657,6 @@ footer a {
     max-width: 600px;
     height: 300px;
     }
-
 
     .img img {
     width: 100%;
@@ -760,12 +769,16 @@ footer a {
 
   /*access section*/
 
- .access-section {
+  .access-section {
     height: 600px;
   }
 
- .access-text {
+  .access-text {
   max-width: 380px;
+  }
+
+  .access-container p {
+    font-size: 1.2rem;
   }
 
   /*contact section*/
@@ -774,6 +787,9 @@ footer a {
     flex-direction: column;
 }
 
+.contact-col-2 {
+    border-radius: 0px 0px 8px 8px;
+}
 /*footer section*/
 
 .footer-wrapper {
@@ -860,13 +876,22 @@ footer a {
     width: 100%;
   }
 
+  .about-text{
+    font-size: 1.3rem;
+    width:80%;
+  }
+
+  .about-text span {
+    font-size: 1.3rem;
+  }
+
   /*access section*/
 
   .access-section {
     height: 400px;
   }
 
-  .access-container h2 {
+  .access-container p {
     font-size: 1rem;
   }
 
@@ -895,6 +920,10 @@ footer a {
   }
 
   .footer-wrapper p {
-    font-size: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .footer-wrapper a {
+    font-size: 0.8rem;
   }
 }
