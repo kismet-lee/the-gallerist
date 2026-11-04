@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   font-size: 1.065rem;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 h2 {
@@ -19,6 +19,7 @@ h3 {
   font-size: 1.41rem;
   font-weight: 700;
   margin-bottom: 8px;
+  color: #bd9741;
 }
 
 html {
@@ -129,7 +130,7 @@ header {
   max-height: 650px;
   background-image:
     linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("images/gallery-1.jpg");
+    url("images/MikeDinsmore_26-10-26_0018_web.webp");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 8px;
@@ -223,7 +224,7 @@ a .ghost-button:hover {
   height: 100%;
   width: 100%;
   padding-top: 7%;
-  padding-bottom: 14%;
+  padding-bottom: 12%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -426,33 +427,32 @@ a .ghost-button:hover {
 
 .menu-wrap {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
 
-.menu-col-1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.menu-col-2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.menu-wrap > div:nth-child(2) {
+    max-width: 1200px;
+    width:100%;
 }
 
 .menu-items-wrap {
   display: flex;
   flex-direction: column;
-  padding: 6% 2% 6% 0;
+  padding-top: 4%;
+  width: 80%;
 }
 
 .menu-item {
   margin-bottom: 16px;
+  width: 100%;
+}
+
+  span .ingredients {
+  color: #fff;
+  font-weight: 800;
 }
 
 /*access section*/
@@ -468,7 +468,7 @@ a .ghost-button:hover {
   text-align: center;
   background-image:
     linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("images/gallery-1.jpg");
+    url("images/MikeDinsmore_26-10-29_0652_web.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #000000;
@@ -580,10 +580,11 @@ a .ghost-button:hover {
   width: 100%;
   background-image:
     linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("images/gallery-1.jpg");
+    url("images/MikeDinsmore_26-10-29_0594_web.webp");
   background-color: #000000;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: bottom;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -754,17 +755,6 @@ footer a {
     display: flex;
     flex-direction: column;
     padding: 6%;
-  }
-
-  .menu-col-1 {
-    margin: 0;
-    flex-direction: column;
-    width: 100%;
-  }
-  .menu-col-2 {
-    flex-direction: column;
-    margin: 0;
-    width: 100%;
   }
 
   /*access section*/
