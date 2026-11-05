@@ -468,7 +468,7 @@ a .ghost-button:hover {
   text-align: center;
   background-image:
     linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("images/MikeDinsmore_26-10-29_0652_web.webp");
+    url("images/MikeDinsmore_26-10-26_0023_web.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #000000;
@@ -713,11 +713,11 @@ footer a {
     width: 90%;
   }
 
+  /*about section*/
+
   .about-section {
     padding: 10% 0;
   }
-
-  /*about section*/
 
   .about-text {
     width: 100%;
@@ -754,7 +754,8 @@ footer a {
   .menu-items-wrap {
     display: flex;
     flex-direction: column;
-    padding: 6%;
+    align-items: center;
+    width: 100%;
   }
 
   /*access section*/
@@ -862,6 +863,14 @@ footer a {
 
   /*about section*/
 
+
+  .about-section {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .about-container {
     width: 100%;
   }
@@ -873,6 +882,46 @@ footer a {
 
   .about-text span {
     font-size: 1.3rem;
+  }
+
+  /*menu section*/
+
+
+  .menu-item {
+    width: 91%;
+    padding: 4%;
+    border-radius: 4px;
+  }
+
+  .menu-items-wrap > div:nth-child(1) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("images/20261025_TheGallerist0089_web.webp");
+    background-position-x: center;
+    background-size: cover;
+  }
+  .menu-items-wrap > div:nth-child(2) {
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("images/20261025_TheGallerist0402_web.webp");
+    background-position-x: center;
+    background-size: cover;
+  }
+  .menu-items-wrap > div:nth-child(3) {
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("images/20261025_TheGallerist0134_web.webp");
+    background-position-x: center;
+    background-size: cover;
+  }
+  .menu-items-wrap > div:nth-child(4) {
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("images/20261025_TheGallerist0350_web.webp");
+    background-position-x: center;
+    background-size: cover;
+  }
+  .menu-items-wrap > div:nth-child(5) {
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("images/20261025_TheGallerist0229_web.webp");
+    background-position-x: center;
+    background-size: cover;
   }
 
   /*access section*/
@@ -894,6 +943,15 @@ footer a {
   .space-container {
     height: auto;
     width: 100%;
+  }
+
+  /*contact section*/
+
+  .contact-section {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   /*footer section*/
