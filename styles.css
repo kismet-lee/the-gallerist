@@ -129,10 +129,11 @@ header {
   max-width: 1250px;
   max-height: 650px;
   background-image:
-    linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("images/MikeDinsmore_26-10-26_0018_web.webp");
+    linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("images/MikeDinsmore_26-10-29_0594_web.webp");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-y: bottom;
   border-radius: 8px;
   box-shadow: 0px 0px 20px rgba(189, 151, 65, 1);
 }
@@ -229,16 +230,7 @@ a .ghost-button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image:
-    linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("images/pattern.jpg");
-
-  /*parallax scroll effect for bg*/
-
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #000000;
 }
 
 .about-container {
@@ -308,12 +300,12 @@ a .ghost-button:hover {
     width: 70%;
     max-width: 1250px;
     text-align: center;
-    font-size: 2.35rem;
     margin-bottom: 32px;
   }
 
   .about-text span {
-    font-size: 2.35rem;
+    font-size: 2.5rem;
+    font-weight: 700;
   }
 
   .about-img-wrap {
@@ -434,7 +426,7 @@ a .ghost-button:hover {
 }
 
 .menu-wrap > div:nth-child(2) {
-    max-width: 1200px;
+    max-width: 1250px;
     width:100%;
 }
 
@@ -442,13 +434,46 @@ a .ghost-button:hover {
   display: flex;
   flex-direction: column;
   padding-top: 4%;
-  width: 80%;
-}
-
-.menu-item {
-  margin-bottom: 16px;
   width: 100%;
 }
+
+  .menu-item {
+    width: 92%;
+    padding: 4%;
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
+
+  .menu-items-wrap > div:nth-child(1) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("images/20261025_TheGallerist0089_web.webp");
+    background-position-y: -400px;
+    background-size: cover;
+  }
+  .menu-items-wrap > div:nth-child(2) {
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("images/20261025_TheGallerist0402_web.webp");
+    background-position-y: -150px;
+    background-size: cover;
+  }
+  .menu-items-wrap > div:nth-child(3) {
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("images/20261025_TheGallerist0134_web.webp");
+    background-position-y: center;
+    background-size: cover;
+  }
+  .menu-items-wrap > div:nth-child(4) {
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("images/20261025_TheGallerist0350_web.webp");
+    background-position-y: center;
+    background-size: cover;
+  }
+  .menu-items-wrap > div:nth-child(5) {
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("images/20261025_TheGallerist0229_web.webp");
+    background-position-y: center;
+    background-size: cover;
+  }
 
   span .ingredients {
   color: #fff;
@@ -472,6 +497,7 @@ a .ghost-button:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #000000;
+  background-attachment: fixed;
 }
 
 .access-container {
@@ -528,16 +554,7 @@ a .ghost-button:hover {
   align-items: center;
   justify-content: center;
   height: 600px;
-  background-image:
-    linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("images/pattern.jpg");
-
-  /*Parallax scroll effect for bg*/
-
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #000000;
 }
 
 .contact-container {
@@ -580,7 +597,7 @@ a .ghost-button:hover {
   width: 100%;
   background-image:
     linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("images/MikeDinsmore_26-10-29_0594_web.webp");
+    url("images/MikeDinsmore_26-10-29_0587_web.webp");
   background-color: #000000;
   background-size: cover;
   background-repeat: no-repeat;
@@ -630,11 +647,11 @@ footer a {
 
 @media (max-width: 800px) {
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .nav-logo {
@@ -713,6 +730,15 @@ footer a {
     width: 90%;
   }
 
+  header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .header-section {
+    box-shadow: none;
+  }
+
   /*about section*/
 
   .about-section {
@@ -758,6 +784,43 @@ footer a {
     width: 100%;
   }
 
+  .menu-item {
+    width: 91%;
+    padding: 4%;
+    border-radius: 4px;
+  }
+
+  .menu-items-wrap > div:nth-child(1) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("images/20261025_TheGallerist0089_web.webp");
+    background-position-x: center;
+    background-size: cover;
+  }
+  .menu-items-wrap > div:nth-child(2) {
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("images/20261025_TheGallerist0402_web.webp");
+    background-position-x: center;
+    background-size: cover;
+  }
+  .menu-items-wrap > div:nth-child(3) {
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("images/20261025_TheGallerist0134_web.webp");
+    background-position-x: center;
+    background-size: cover;
+  }
+  .menu-items-wrap > div:nth-child(4) {
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("images/20261025_TheGallerist0350_web.webp");
+    background-position-x: center;
+    background-size: cover;
+  }
+  .menu-items-wrap > div:nth-child(5) {
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("images/20261025_TheGallerist0229_web.webp");
+    background-position-x: center;
+    background-size: cover;
+  }
+
   /*access section*/
 
   .access-section {
@@ -797,6 +860,9 @@ footer a {
     font-size: 1rem;
   }
 
+  h2 {
+    font-size: 1.3rem;
+  }
   /*header section*/
 
   .header-logo {
@@ -812,7 +878,8 @@ footer a {
   }
 
   .header-section p {
-    font-size: 18px;
+    font-size: 16px;
+    width:100%;
   }
 
   /*buttons responsiveness*/
@@ -887,38 +954,32 @@ footer a {
   /*menu section*/
 
 
-  .menu-item {
-    width: 91%;
-    padding: 4%;
-    border-radius: 4px;
-  }
-
   .menu-items-wrap > div:nth-child(1) {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("images/20261025_TheGallerist0089_web.webp");
     background-position-x: center;
     background-size: cover;
   }
   .menu-items-wrap > div:nth-child(2) {
-    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("images/20261025_TheGallerist0402_web.webp");
     background-position-x: center;
     background-size: cover;
   }
   .menu-items-wrap > div:nth-child(3) {
-    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("images/20261025_TheGallerist0134_web.webp");
     background-position-x: center;
     background-size: cover;
   }
   .menu-items-wrap > div:nth-child(4) {
-    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("images/20261025_TheGallerist0350_web.webp");
     background-position-x: center;
     background-size: cover;
   }
   .menu-items-wrap > div:nth-child(5) {
-    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("images/20261025_TheGallerist0229_web.webp");
     background-position-x: center;
     background-size: cover;
@@ -931,7 +992,7 @@ footer a {
   }
 
   .access-container p {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
 /*space section*/
@@ -952,6 +1013,10 @@ footer a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .contact-container {
+    box-shadow: none;
   }
 
   /*footer section*/
