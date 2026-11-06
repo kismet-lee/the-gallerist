@@ -157,6 +157,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 .button {
@@ -165,12 +166,14 @@ header {
   align-items: center;
   height: 40px;
   width: 146px;
-  background-color: #bd9741;
   color: #183028;
-  padding: 0 8px;
-  margin: 32px 0px 32px 0px;
-  border: 1px solid #bd9741;
-  border-radius: 4px;
+  background: linear-gradient(to right, #cdb573, #b49857, #cdb573 );
+  border: none;
+  padding: 2%;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 a {
@@ -182,17 +185,8 @@ a:hover {
   color: #bd9741;
 }
 
-a .button {
-  color: #183028;
-}
-
-a .button:hover {
-  color: #bd9741;
-}
-
 .button:hover {
-  background-color: #0f201a;
-  border: 1px solid #bd9741;
+background: linear-gradient(to right, #b49857, #cdb573, #b49857);
 }
 
 .ghost-button {
@@ -204,7 +198,7 @@ a .button:hover {
   color: #d5bf29;
   border: 1px solid #bd9741;
   border-radius: 4px;
-  padding: 0 8px;
+  padding: 2%;
   margin: 32px 0px 32px 16px;
 }
 
@@ -612,6 +606,8 @@ a .ghost-button:hover {
 
 .contact-col-2 p {
   width: 85%;
+  margin-bottom: 6%;
+;
 }
 
 .icon {
