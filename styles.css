@@ -733,6 +733,7 @@ footer a {
 
   .header-section {
     box-shadow: none;
+    height: 75vh;
   }
 
   /*about section*/
@@ -872,6 +873,7 @@ footer a {
 
   .header-section {
     padding: 8%;
+    border-radius: 0;
   }
 
   .header-section h1 {
