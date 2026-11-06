@@ -1037,3 +1037,30 @@ footer a {
     font-size: 0.8rem;
   }
 }
+
+/*animations*/
+
+@media (prefers-reduced-motion: no-preference){
+  .img{
+    opacity: 0;
+    scale: 0.8;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 50px 36%;
+  }
+
+    .img-2{
+    opacity: 0;
+    scale: 0.8;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 50px 36%;
+  }
+
+  @keyframes fade-in {
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+}
