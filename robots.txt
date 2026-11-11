@@ -29,6 +29,24 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+User-agent: GoogleOther
+Allow: /
+
+User-agent: GoogleOther-Image
+Allow: /
+
+User-agent: GoogleOther-Video
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+User-agent: AdsBot-Google-Mobile-Apps
+Allow: /
+
 # Perplexity
 User-agent: PerplexityBot
 Allow: /
@@ -43,11 +61,60 @@ Allow: /
 User-agent: meta-externalagent
 Allow: /
 
+User-agent: FacebookBot
+Allow: /
+
 User-agent: Applebot
 Allow: /
 
 User-agent: Applebot-Extended
 Allow: /
 
-# Sitemap
-Sitemap: https://thegalleristosaka.com
+# Other AI Crawlers, Search Bots & Scrapers
+User-agent: AI2Bot
+Allow: /
+
+User-agent: Ai2Bot-Dolma
+Allow: /
+
+User-agent: aiHitBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: cohere-training-data-crawler
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: img2dataset
+Allow: /
+
+User-agent: MyCentralAIScraperBot
+Allow: /
+
+User-agent: omgili
+Allow: /
+
+User-agent: omgilibot
+Allow: /
+
+User-agent: Quora-Bot
+Allow: /
+
+User-agent: TikTokSpider
+Allow: /
+
+User-agent: YouBot
+Allow: /
