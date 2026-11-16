@@ -1022,6 +1022,13 @@ footer a {
     animation-timeline: view();
     animation-range: 50px 36%;
   }
+    .contact-img{
+    opacity: 0;
+    scale: 0.8;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 50px 36%;
+  }
 
 
   @keyframes fade-in {
