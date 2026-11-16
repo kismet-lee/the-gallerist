@@ -639,6 +639,10 @@ footer a {
     width: auto;
   }
 
+   .menu-button {
+    display: block;
+  }
+
 /*responsiveness for images*/
 
     .img {
