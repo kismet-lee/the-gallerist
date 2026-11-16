@@ -351,7 +351,7 @@ a .ghost-button:hover {
 
 .img-logo {
     width: 100%;
-    height: 64px;
+    max-width: 340px;
     margin: 0% 0% 8% 0%;
 }
 
@@ -399,86 +399,67 @@ a .ghost-button:hover {
 
 /*menu section*/
 
-.menu-section {
-  height: 100%;
-  width: 100%;
-  padding: 6% 0;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+.menu {
+  width:100%;
+  max-width: 100%;
 }
 
 .menu-container {
-  max-width: 1250px;
   width: 80%;
+  max-width: 1250px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 8px;
 }
 
-.menu-wrap {
+.menu-image {
+  width: 100%;
+  height: 400px;
+  border-radius: 4px;
+  background-image: url("images/MikeDinsmore_26-10-29_0626_web.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-items-wrapper {
+  width: 100%;
+  height: auto;
   display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  gap: 32px;
+  margin: 4% 0;
+}
+
+.col-1 {
+  width: 45%;
+}
+
+.col-2 {
+  width: 45%;
+}
+
+.menu-img {
   width: 100%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+  margin-bottom: 2%;
 }
 
-.menu-wrap > div:nth-child(2) {
-    max-width: 1250px;
-    width:100%;
-}
-
-.menu-items-wrap {
-  display: flex;
-  flex-direction: column;
-  padding-top: 4%;
+.menu-img img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
 }
 
-  .menu-item {
-    width: 92%;
-    padding: 4%;
-    border-radius: 4px;
-    margin-bottom: 16px;
-  }
-
-  .menu-items-wrap > div:nth-child(1) {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("images/20261025_TheGallerist0089_web.webp");
-    background-position-y: -400px;
-    background-size: cover;
-  }
-  .menu-items-wrap > div:nth-child(2) {
-    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("images/20261025_TheGallerist0402_web.webp");
-    background-position-y: -150px;
-    background-size: cover;
-  }
-  .menu-items-wrap > div:nth-child(3) {
-    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("images/20261025_TheGallerist0134_web.webp");
-    background-position-y: center;
-    background-size: cover;
-  }
-  .menu-items-wrap > div:nth-child(4) {
-    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("images/20261025_TheGallerist0350_web.webp");
-    background-position-y: center;
-    background-size: cover;
-  }
-  .menu-items-wrap > div:nth-child(5) {
-    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("images/20261025_TheGallerist0229_web.webp");
-    background-position-y: center;
-    background-size: cover;
-  }
-
-  span .ingredients {
-  color: #fff;
-  font-weight: 800;
+.menu-item{
+  margin-bottom: 16px;
 }
 
 /*access section*/
@@ -577,7 +558,6 @@ a .ghost-button:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border-radius: 8px;
 }
 
 .contact-col-1 {
@@ -622,9 +602,6 @@ a .ghost-button:hover {
   height: 40px;
 }
 
-.icon-wrap {
-    margin-bottom: 32px;
-}
 
 /*footer section*/
 
@@ -660,6 +637,10 @@ footer a {
   .nav-logo {
     height: 40px;
     width: auto;
+  }
+
+   .menu-button {
+    display: block;
   }
 
 /*responsiveness for images*/
@@ -729,7 +710,7 @@ footer a {
   }
 
   .header-section h1 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     width: 90%;
   }
 
@@ -765,65 +746,24 @@ footer a {
   }
 
   /*menu section*/
-  
-  .menu-button {
-    display: block;
+  .menu-image {
+    height: 200px;
+    background-position-y: center;
+    background-size:150%;
+ }
+
+ .menu-items-wrapper {
+  flex-direction: column;
+  gap: 0px;
+ }
+
+ .col-1 {
+  width: 100%;
   }
 
-  .menu-section {
-    padding: 4% 0;
-  }
-
-  .menu-container {
-    flex-direction: column;
-  }
-  .menu-wrap {
-    flex-direction: column;
-  }
-
-  .menu-items-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .col-2 {
     width: 100%;
-  }
-
-  .menu-item {
-    width: 91%;
-    padding: 4%;
-    border-radius: 4px;
-  }
-
-  .menu-items-wrap > div:nth-child(1) {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("images/20261025_TheGallerist0089_web.webp");
-    background-position-x: center;
-    background-size: cover;
-  }
-  .menu-items-wrap > div:nth-child(2) {
-    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("images/20261025_TheGallerist0402_web.webp");
-    background-position-x: center;
-    background-size: cover;
-  }
-  .menu-items-wrap > div:nth-child(3) {
-    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("images/20261025_TheGallerist0134_web.webp");
-    background-position-x: center;
-    background-size: cover;
-  }
-  .menu-items-wrap > div:nth-child(4) {
-    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("images/20261025_TheGallerist0350_web.webp");
-    background-position-x: center;
-    background-size: cover;
-  }
-  .menu-items-wrap > div:nth-child(5) {
-    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("images/20261025_TheGallerist0229_web.webp");
-    background-position-x: center;
-    background-size: cover;
-  }
+ }
 
   /*access section*/
 
@@ -849,6 +789,13 @@ footer a {
 .contact-col-2 {
     border-radius: 0px 0px 8px 8px;
 }
+
+.contact-col-1 p{
+  width: 90%;
+}
+.contact-col-2 p{
+  width: 90%;
+}
 /*footer section*/
 
 .footer-wrapper {
@@ -862,11 +809,13 @@ footer a {
 
 @media (max-width: 400px) {
   p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   h2 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    margin-top: 0;
   }
   /*header section*/
 
@@ -884,7 +833,7 @@ footer a {
   }
 
   .header-section h1 {
-    font-size: 16px;
+    font-size: 14px;
     width:100%;
   }
 
@@ -959,37 +908,11 @@ footer a {
 
   /*menu section*/
 
-
-  .menu-items-wrap > div:nth-child(1) {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("images/20261025_TheGallerist0089_web.webp");
-    background-position-x: center;
-    background-size: cover;
-  }
-  .menu-items-wrap > div:nth-child(2) {
-    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("images/20261025_TheGallerist0402_web.webp");
-    background-position-x: center;
-    background-size: cover;
-  }
-  .menu-items-wrap > div:nth-child(3) {
-    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("images/20261025_TheGallerist0134_web.webp");
-    background-position-x: center;
-    background-size: cover;
-  }
-  .menu-items-wrap > div:nth-child(4) {
-    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("images/20261025_TheGallerist0350_web.webp");
-    background-position-x: center;
-    background-size: cover;
-  }
-  .menu-items-wrap > div:nth-child(5) {
-    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("images/20261025_TheGallerist0229_web.webp");
-    background-position-x: center;
-    background-size: cover;
-  }
+  .menu-image {
+    height: 150px;
+    background-position-y: center;
+    background-size:150%;
+ }
 
   /*access section*/
 
@@ -1023,6 +946,10 @@ footer a {
 
   .contact-container {
     box-shadow: none;
+  }
+
+  .contact-col-2 p {
+    margin-bottom: 16px;
   }
 
   /*footer section*/
@@ -1059,6 +986,14 @@ footer a {
   }
 
     .img-2{
+    opacity: 0;
+    scale: 0.8;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 50px 36%;
+  }
+
+    .menu-image{
     opacity: 0;
     scale: 0.8;
     animation: fade-in linear forwards;
